@@ -18,26 +18,29 @@ function handleSubmit(event){
   hideQuiz();
   const question1Input = document.getElementById("form-question1").value;
   const question2Input = document.getElementById("question2").value;
-  let question3Input = docuemnt.getElementById("minecraft").value;
-  let pythonResult = docuemnt.getElementById("result3");
+  let question3Input = document.getElementById("minecraft").value;
+  let csharpResult = document.getElementById("result4");
+  let pythonResult = document.getElementById("result3");
   let javascriptResult = document.getElementById("result2");
   let htmlResult = document.getElementById("result1");
-  const result4 = document.getElementById("resultwarning");
+  const resultWarning = document.getElementById("resultwarning");
 
-
-  if ((question1Input === "puzzles") && (question2Input === "fox" || question2Input === "snakes") && (question3Input === "meh" || question3Input === "hate")) {
-  pythonResult.classList.remove("hidden")
+if (question1Input && question2Input && question3Input){
+  if (question1Input === "puzzles" && question2Input === "fox" || question2Input === "snakes" && question3Input === "meh" || question3Input === "hate") {
+  pythonResult.classList.remove("hidden");
   console.log("ran");
-  } else if ((question1Input === "websites") && (question2Input === "fox") && (question3Input ==="meh") || (question3Input === "hate")) {
-  htmlResult.classList.remove("hidden")
+  } else if (question1Input === "websites" && question2Input === "fox" && question3Input ==="meh" || question3Input === "hate") {
+  htmlResult.classList.remove("hidden");
   console.log("ran");
+  } else if ((question1Input === "puzzles") && (question2Input === "coffee") &&             (question3Input === "love" || question3Input === "meh")) {
+    javascriptResult.classList.remove("hidden")
   } else {
-  result4.classList.remove("hidden");
+    csharpResult.classList.remove("hidden");
+  }
+} else {
+    resultWarning.classList.remove("hidden");
   }
 }
-
-
-quizPage1Form.addEventListener("submit" , handleSubmit);
-startQuizBtn.addEventListener("click" , toQuizPage1);
-
+  quizPage1Form.addEventListener("submit" , handleSubmit);
+  startQuizBtn.addEventListener("click" , toQuizPage1);
 })
