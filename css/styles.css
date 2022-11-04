@@ -9,3 +9,42 @@
 .hidden {
   display: none;
 }
+
+.htmlresult{
+  display: grid;
+  width: 500px;
+  background-color: rgba(128, 0, 128, 0.41);
+  margin-left:50vh;
+  margin-top:30vh;
+  text-align: center;
+
+}
+#htmlimg{
+  width: 300px;
+  height: auto;
+}
+.javaresult{
+  display: grid;
+  width: 500px;
+  background-color: rgba(128, 0, 128, 0.41);
+  margin-left:50vh;
+  margin-top:30vh;
+  text-align: center;
+}
+#javaimg{
+  width: 300px;
+  height: auto;
+}
+.pythongresult{
+  display: grid;
+  width: 500px;
+  background-color: rgba(128, 0, 128, 0.41);
+  margin-left:50vh;
+  margin-top:30vh;
+  text-align: center;
+}
+
+#pythonimg{
+  width: 300px;
+  height: auto;
+}
