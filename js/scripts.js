@@ -22,7 +22,7 @@ function handleSubmit(event){
 
 }
 
-// if (question1Input === "puzzles" )
+if (question1Input === "puzzles" )
 
 startQuizBtn.addEventListener("click" , toQuizPage1);
 quizPage1Form.addEventListener("submit" , handleSubmit);
