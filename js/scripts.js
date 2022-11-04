@@ -19,11 +19,22 @@ function handleSubmit(event){
   const question1Input = document.getElementById("form-question1").value;
   const question2Input = document.getElementById("question2").value;
   const question3Input = docuemnt.querySelector("input[name='minecraft']:checked").value;
+  let pythonResult = docuemnt.getElementById("result3");
+  let javascriptResult = document.getElementById("result2");
+  let htmlResult = document.getElementById("result1");
+  const result4 = document.getElementById("")
 
+
+if ((question1Input === "puzzles") && (question2Input === "fox" || question2Input === "snakes") && (question3Input === "meh" || question3Input === "hate")) {
+  pythonResult.classList.remove("hidden");
+} else if ((question1Input === "websites") && (question2Input === "fox") && (question3Input ==="meh") || (question3Input === "hate")) {
+  htmlResult.classList.remove("hidden");
+} else {
+  result4.classList.remove("hidden");
 }
 
-if (question1Input === "puzzles" )
 
 startQuizBtn.addEventListener("click" , toQuizPage1);
 quizPage1Form.addEventListener("submit" , handleSubmit);
+}
 })
