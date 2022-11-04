@@ -32,7 +32,7 @@ if (question1Input && question2Input && question3Input){
   } else if (question1Input === "websites" && question2Input === "fox" && question3Input ==="meh" || question3Input === "hate") {
   htmlResult.classList.remove("hidden");
   console.log("ran");
-  } else if ((question1Input === "puzzles") && (question2Input === "coffee") &&             (question3Input === "love" || question3Input === "meh")) {
+  } else if ((question1Input === "puzzles" || "websites") && (question2Input === "coffee") &&  (question3Input === "love" || question3Input === "meh")) {
     javascriptResult.classList.remove("hidden")
   } else {
     csharpResult.classList.remove("hidden");
