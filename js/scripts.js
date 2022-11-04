@@ -13,7 +13,9 @@ function handleSubmit(event){
   const question1Input = document.getElementById("form-question1").value;
   const question2Input = document.getElementById("question2").value;
   const question3Input = docuemnt.querySelector("input[name='minecraft']:checked").value;
+
 }
+if 
 
 
 startQuizBtn.addEventListener("click" , toQuizPage1);
