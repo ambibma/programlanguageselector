@@ -6,9 +6,7 @@
   margin-top: 30vh;
   text-align: center;
 }
-.hidden {
-  display: none;
-}
+
 
 .htmlresult{
   display: grid;
@@ -35,7 +33,7 @@
   width: 300px;
   height: auto;
 }
-.pythongresult{
+.pythonresult{
   display: grid;
   width: 500px;
   background-color: rgba(128, 0, 128, 0.41);
@@ -47,4 +45,7 @@
 #pythonimg{
   width: 300px;
   height: auto;
+}
+.hidden{
+  display: none;
 }
