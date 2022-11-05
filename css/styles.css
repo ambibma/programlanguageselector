@@ -54,6 +54,10 @@ body {
 #reload{
   color: black;
 }
+#warning{
+  color: red;
+  font-weight: bold;
+}
 .hidden{
   display: none;
 }
