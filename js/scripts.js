@@ -9,7 +9,7 @@ window.addEventListener("load" , function() {
   }
   function hideQuiz(){
   quizStartText.setAttribute("class", "hidden");
-  quizPage1Form.setAttribute("class", "hidden")
+  quizPage1Form.setAttribute("class", "hidden");
 }
 
   function toQuizPage1(){
