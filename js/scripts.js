@@ -2,6 +2,7 @@ window.addEventListener("load" , function() {
   const startQuizBtn = document.getElementById("start-quiz");
   let quizStartText = document.getElementById("quiz-start-text");
   let quizPage1Form = document.getElementById("quiz-page1");
+  let 
 
   function hideQuiz(){
   quizStartText.setAttribute("class", "hidden");

@@ -1,18 +1,23 @@
+body {
+  background-image: url("../img/ruka-chelovek-robot.jpg");
+  background-size: cover;
+  background-position: 0 -100px;
+  background-repeat: no-repeat;
+  background-color: black;
+  
+}
 #quiz-start {
-  display: grid;
-  width: 600px;
-  background-color: rgba(128, 0, 128, 0.41);
-  margin-left: 50vh;
+  display: flow-root;
+  width: 50vh;
+  background-color:rgba(107, 184, 197, 0.742);
+  height: auto;
+  margin-left: 65vh;
   margin-top: 30vh;
   text-align: center;
 }
 
 .htmlresult{
-  display: grid;
-  width: 500px;
-  background-color: rgba(128, 0, 128, 0.41);
-  margin-left:50vh;
-  margin-top:30vh;
+  
   text-align: center;
 
 }
@@ -21,39 +26,28 @@
   height: auto;
 }
 .javaresult{
-  display: grid;
-  width: 500px;
-  background-color: rgba(128, 0, 128, 0.41);
-  margin-left:50vh;
-  margin-top:30vh;
   text-align: center;
 }
 #javaimg{
+  padding: 10px;
   width: 300px;
   height: auto;
 }
 .pythonresult{
-  display: grid;
-  width: 500px;
-  background-color: rgba(128, 0, 128, 0.41);
-  margin-left:50vh;
-  margin-top:30vh;
+  
   text-align: center;
 }
 
 #pythonimg{
+  padding: 10px;
   width: 300px;
   height: auto;
 }
 .csharpresult{
-  display: grid;
-  width: 500px;
-  background-color: rgba(128, 0, 128, 0.41);
-  margin-left:50vh;
-  margin-top:30vh;
   text-align: center;
 }
 #csharpimg{
+  padding: 10px;
   width: 300px;
   height: auto;
 }  
