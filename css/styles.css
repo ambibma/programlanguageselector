@@ -19,6 +19,9 @@ body {
   font-family: "Prompt" , "sans-serif";
   border-radius: 3px;
 }
+.matrix{
+  font-style: italic;
+}
 
 .htmlresult{
   text-align: center;
