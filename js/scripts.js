@@ -30,22 +30,25 @@ function handleSubmit(event){
   let htmlResult = document.getElementById("result1");
   const resultWarning = document.getElementById("resultwarning");
   const nameInput = document.getElementById("nameinput").value;
-  const nameResult = document.getElementById("name");
+  
 
 if (question1Input && question2Input && question3Input){
   if (question1Input === "puzzles" && question2Input === "fox" || question2Input === "snakes" && question3Input === "meh" || question3Input === "hate") {
-    console.log(nameInput);
-    console.log(nameResult);
-    nameResult.innerText = nameInput
+    const nameResult = pythonResult.querySelector('.name');
+    nameResult.innerText = nameInput;
     pythonResult.classList.remove("hidden");
   } else if (question1Input === "websites" && question2Input === "fox" && question3Input ==="meh" || question3Input === "hate") {
+    const nameResult = pythonResult.querySelector('.name');
     nameResult.innerText = nameInput;
     htmlResult.classList.remove("hidden");
   console.log("ran");
   } else if ((question1Input === "puzzles" || "websites") && (question2Input === "coffee") &&  (question3Input === "love" || question3Input === "meh")) {
+    const nameResult = pythonResult.querySelector('.name');
+    
     nameResult.innerText = nameInput;
     javascriptResult.classList.remove("hidden");
   } else {
+    const nameResult = pythonResult.querySelector('.name');
     nameResult.innerText = nameInput;
     csharpResult.classList.remove("hidden");
   }
