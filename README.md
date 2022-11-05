@@ -1,5 +1,6 @@
-# Program Language Selector![PLSlogo](https://user-images.githubusercontent.com/115340658/200135567-257894ab-bb76-44d6-adb3-427fecb75d09.png)
+<img src="https://user-images.githubusercontent.com/115340658/200135567-257894ab-bb76-44d6-adb3-427fecb75d09.png" width="auto" height="150px">
 
+# Program Language Selector 
 ---
 #### By Ambi Hidalgo 
 ###### ambio.pk@gmail.com
@@ -9,7 +10,7 @@
 ---
 
 #### What is Language Program Selector?
-Program Language Selector or LPS, is a web application designed to match prospective coding students with a programming language throuh a series of questions.
+Program Language Selector or LPS, is a student designed web application to match prospective coding students with a programming language throuh a series of obscure questions. LPS's purpose for creation is demonstrate knowledge of manipulating the DOM and Window objects through javascript.
 
 ## Technologies Used
 
