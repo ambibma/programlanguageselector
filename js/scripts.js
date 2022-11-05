@@ -4,12 +4,7 @@ window.addEventListener("load" , function() {
   let quizPage1Form = document.getElementById("quiz-page1");
   let quizRestart = document.getElementById("quiz-results-page");
   let plsLogo = document.getElementById("plslogo");
-  let nameInput = document.getElementById("nameinput").value;
-  const nameResult = document.getElementById("name");
   
-  function inputNames(){
-    nameResult.innertext = nameInput;
-  }
   function reloadQuiz(){
     window.location.reload();
   }
@@ -34,18 +29,24 @@ function handleSubmit(event){
   let javascriptResult = document.getElementById("result2");
   let htmlResult = document.getElementById("result1");
   const resultWarning = document.getElementById("resultwarning");
-
+  const nameInput = document.getElementById("nameinput").value;
+  const nameResult = document.getElementById("name");
 
 if (question1Input && question2Input && question3Input){
   if (question1Input === "puzzles" && question2Input === "fox" || question2Input === "snakes" && question3Input === "meh" || question3Input === "hate") {
-    inputNames();
+    console.log(nameInput);
+    console.log(nameResult);
+    nameResult.innerText = nameInput
     pythonResult.classList.remove("hidden");
   } else if (question1Input === "websites" && question2Input === "fox" && question3Input ==="meh" || question3Input === "hate") {
+    nameResult.innerText = nameInput;
     htmlResult.classList.remove("hidden");
   console.log("ran");
   } else if ((question1Input === "puzzles" || "websites") && (question2Input === "coffee") &&  (question3Input === "love" || question3Input === "meh")) {
+    nameResult.innerText = nameInput;
     javascriptResult.classList.remove("hidden");
   } else {
+    nameResult.innerText = nameInput;
     csharpResult.classList.remove("hidden");
   }
 } else {
