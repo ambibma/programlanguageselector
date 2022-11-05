@@ -1,3 +1,5 @@
+<img src="./img/PLSlogo.png" width="150" height="auto">
+___
 # Program Language Selector
 ---
 #### By Ambi Hidalgo 
