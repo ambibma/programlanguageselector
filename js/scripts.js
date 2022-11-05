@@ -2,17 +2,19 @@ window.addEventListener("load" , function() {
   const startQuizBtn = document.getElementById("start-quiz");
   let quizStartText = document.getElementById("quiz-start-text");
   let quizPage1Form = document.getElementById("quiz-page1");
-  let 
-
+  let quizRestart = document.getElementById("quiz-results-page");
+  
+  function reloadQuiz(){
+    window.location.reload();
+  }
   function hideQuiz(){
   quizStartText.setAttribute("class", "hidden");
   quizPage1Form.setAttribute("class", "hidden")
 }
 
-function toQuizPage1(){
+  function toQuizPage1(){
   quizStartText.classList.add("hidden");
   quizPage1Form.classList.remove("hidden");
-
 }
 function handleSubmit(event){
   event.preventDefault();
@@ -42,6 +44,7 @@ if (question1Input && question2Input && question3Input){
     resultWarning.classList.remove("hidden");
   }
 }
+  quizRestart.addEventListener("click" , reloadQuiz)
   quizPage1Form.addEventListener("submit" , handleSubmit);
   startQuizBtn.addEventListener("click" , toQuizPage1);
 })
