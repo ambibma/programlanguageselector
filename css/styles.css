@@ -8,6 +8,14 @@ body {
   font-family: "Prompt" , "sans-serif";
   
 }
+#plslogo{
+  width: 150px;
+  height: auto;
+  text-align: center;
+  margin-left: 15vh;
+  padding: 5px;
+ 
+}
 #quiz-start {
   display: grid;
   width: 50vh;

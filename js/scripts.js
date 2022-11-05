@@ -3,7 +3,13 @@ window.addEventListener("load" , function() {
   let quizStartText = document.getElementById("quiz-start-text");
   let quizPage1Form = document.getElementById("quiz-page1");
   let quizRestart = document.getElementById("quiz-results-page");
+  let plsLogo = document.getElementById("plslogo");
+  let nameInput = document.getElementById("nameinput").value;
+  const nameResult = document.getElementById("name");
   
+  function inputNames(){
+    nameResult.innertext = nameInput;
+  }
   function reloadQuiz(){
     window.location.reload();
   }
@@ -14,6 +20,7 @@ window.addEventListener("load" , function() {
 
   function toQuizPage1(){
   quizStartText.classList.add("hidden");
+  plsLogo.classList.add("hidden");
   quizPage1Form.classList.remove("hidden");
 }
 function handleSubmit(event){
@@ -28,15 +35,16 @@ function handleSubmit(event){
   let htmlResult = document.getElementById("result1");
   const resultWarning = document.getElementById("resultwarning");
 
+
 if (question1Input && question2Input && question3Input){
   if (question1Input === "puzzles" && question2Input === "fox" || question2Input === "snakes" && question3Input === "meh" || question3Input === "hate") {
-  pythonResult.classList.remove("hidden");
-  console.log("ran");
+    inputNames();
+    pythonResult.classList.remove("hidden");
   } else if (question1Input === "websites" && question2Input === "fox" && question3Input ==="meh" || question3Input === "hate") {
-  htmlResult.classList.remove("hidden");
+    htmlResult.classList.remove("hidden");
   console.log("ran");
   } else if ((question1Input === "puzzles" || "websites") && (question2Input === "coffee") &&  (question3Input === "love" || question3Input === "meh")) {
-    javascriptResult.classList.remove("hidden")
+    javascriptResult.classList.remove("hidden");
   } else {
     csharpResult.classList.remove("hidden");
   }

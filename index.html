@@ -7,6 +7,7 @@
   </head>
 <body>
   <div id="quiz-start">
+    <img src="./img/PLSlogo.png" id="plslogo">
     <div class="text-div" id="quiz-start-text">
     <h1 id="quiz-start-header">Program Language Matcher</h1>
     <h2 id="quiz-start-sub-header">Find your missing technological half</h2>
@@ -14,10 +15,13 @@
     <p class="match-button"><button class="btn" id="start-quiz">Start!</button></p>
     </div>
     <div class="quiz-page1 hidden" id="quiz-page1">
+      <h3>Enter a name:</h3>
+      <label for="nameinput"></label>
+      <input id="nameinput" type="text" name="nameinput">
       <h3>Do you like puzzles or websites?</h3>
       <form>
         <div class="question1-form" id="question1-div">
-        <label for="question1">puzzles or websites</label>
+        <label for="question1"></label>
         <input id="form-question1" type="text"><br>
         </div>
         <div class="question2-form" id="question2-div">
@@ -65,22 +69,22 @@
     <div class="results" id="quiz-results-page">
       <div class="htmlresult hidden" id="result1">
         <img src="img/html.jpg" alt="hackerstyle html logo" id="htmlimg">
-        <p>Your result is HTML!</p>
+        <p> <span id="name">__</span> , you should learn HTML!</p>
         <p><button type="onclick" id="reload">Make another Quiz!</button></p>
       </div>
       <div class="javaresult hidden" id="result2">
         <img src="img/java.png" alt="old school java logo" id="javaimg">
-        <p>You Result is JavaScript!</p>
+        <p> <span id="name">__</span> , you should learn javaScript!</p>
         <p><button type="onclick" id="reload">Make another Quiz!</button></p>
       </div>
       <div class="pythonresult hidden" id="result3" >
         <img src="img/python.jpg" alt="a picture of a python" id="pythonimg">
-        <p>You result is Python!</p>
+        <p> <span id="name">__</span> , you should learn Python! *hsss*</p>
         <p><button type="onclick" id="reload">Make another Quiz!</button></p>
       </div>
       <div class="csharpresult hidden" id="result4">
         <img src="img/csharp.png" alt="csharp logo" id="csharpimg">
-        <p>You result is C#! </p>
+        <p> <span id="name"></span> you should learn C#!</p>
         <p><button type="onclick" id="reload">Make another Quiz!</button></p>
       </div>
       <div class="warningresult hidden" id="resultwarning">
