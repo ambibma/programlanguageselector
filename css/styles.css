@@ -12,7 +12,7 @@ body {
   width: 150px;
   height: auto;
   text-align: center;
-  margin-left: 15vh;
+  margin-left: 14vh;
   padding: 5px;
  
 }
@@ -72,8 +72,9 @@ body {
   border-radius: 3px;
   background-color: yellow;
 }
-#reload{
-  color: rgb(163, 23, 23);
+.reload{
+  background-color: rgb(47, 255, 116);
+  color: rgb(0, 0, 0);
   border-radius: 2px;
 }
 #warning{
