@@ -38,6 +38,7 @@ body {
 #htmlimg{
   width: 300px;
   height: auto;
+  padding: 10px;
 }
 .javaresult{
   text-align: center;
