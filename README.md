@@ -33,7 +33,7 @@ Program Language Selector or LPS, is a student designed web application to match
 
 ## Known Bugs
 
-* No known bugs at the moment
+* Website loads incorrectly on mobile
 send bug concerns to ambi.pk@gmail.com
 
 ## License
