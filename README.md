@@ -34,7 +34,6 @@ Program Language Selector or LPS, is a student designed web application to match
 ## Known Bugs
 
 * Website loads incorrectly on mobile
-* Java logo does not display on results page on git hub pages
 send bug concerns to ambi.pk@gmail.com
 
 ## License
